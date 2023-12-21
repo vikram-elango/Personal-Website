@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+        <title>Vikram Elango</title>
+        <link rel="shortcut icon" href="images/vikramfavicon.png">
+
+
+
+
+        <link rel="stylesheet" href='styles.css'>
+    
+    
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="/" class="logo-link">Vikram</a>
+        <div class="nav-links">
+            <a href="https://app.forta.network/pools?search=" class="nav-item" target="_blank">Home</a>
+            <a href="/" class="nav-item">Experience</a> 
+            <a href="https://app.forta.network/alerts" class="nav-item" target="_blank">Projects</a>
+            <a href="https://app.forta.network/network" class="nav-item" target="_blank">Skills</a>
+            <a href="/resume/VIKRAM_ELANGO_RESUME.pdf" class="nav-item" target="_blank">Resume</a>
+        </div>
+        
+    </nav>
+
+
+    <div id="home" class="homepage">
+
+        
+        <div class="body">
+            <div class="body-center">
+                <div class="introduction">
+                    <div>
+                        <p class="name">Hello! I'm Vikram Elango 👋</p>
+                    </div>
+                    <div class="position" id="animatedText"></div>
+                    <div class="Intro">A computer engineering student at University of California Santa Barbara, I am skilled in various programming languages including Python, JavaScript, HTML, CSS, and have exposure to C++/C and Java as well as Verilog and assembly.</div>
+                    <div class="icons">
+                        <div >
+                            <a href="https://www.linkedin.com/in/vikram-elango/" target="_blank"><img class="linkedin" src="logos/In-Blue-128.png" ></a>
+                        </div>
+                        <div > 
+                            <a href="https://github.com/vikram-elango" target="_blank"><img class="github" src="logos/github-mark-white.svg"></a>
+
+                        </div>
+                        <div >
+                            <a href="https://app.forta.network/alerts" target="_blank"><img class="email" src="logos/Gmail_Logo_128px.png"></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div >
+                    <img class="picture" src="images/vik.jpeg">
+        
+            </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <div id='second' class="journey">
+      <div class="body">
+        <div class="body-center-2">
+          <div class="second-title">My <span class="red-text">Experience</span></div>
+          <div class="container">
+          <div class="left-container">
+          <div class="item-2">
+            <img class="exp-logo" src="logos/logos/MGA_BIG.png">
+       
+            </div>
+            <div class="item-2">
+              <img id="ucsblogo" class="exp-logo" src="logos/logos/ucsblogoo.png">
+
+             
+            </div>
+          <div class="item-2">
+            <img class="exp-logo" src="logos/logos/BAC-FullPrimary-FullColor.png">
+
+
+            </div>
+
+          </div>
+          <div class="right-container">
+            <div class="item item-1">
+                <div class="title-date">
+                  
+                <p class="experience-title"> <span class="red-text">Software Quality Engineer </span>| Magna International</p>
+                <p class="experience-date"><span></span> June 2023 - Present</p>
+                </div>
+                
+                <li>As the only software quality engineer in the team, lead the development of a Python-based Quality Assurance Software, significantly optimizing log file analysis and error detection processes.</li>
+                <li>Pioneer advancements in QA methodologies, enabling the identification of recurring sensor failures and mitigating expensive product return cycles.</li>
+                <li>Leverage SQL to navigate databases, unveiling trends and patterns related to failures, which led to a 30% increase in error identification efficiency.</li>
+                <li>Lead data analysis efforts, produce comprehensive reports and performance metrics, and drive a 40% improvement in decision-making as a team lead.</li>          
+              </div>
+              <div class="item item-1">
+                <div class="title-date">
+                  
+                  <p class="experience-title"> <span class="red-text">Maintenance Technician </span>| UC Santa Barbara</p>
+                  <p class="experience-date"> April 2022 - June 2023</p>
+                  </div>
+                <li>Performed monthly electrical meter readings across campus dining facilities, demonstrating proficiency in managing and interpreting complex electrical systems.</li>
+                <li>Modernized and updated blueprints for the University Center building, ensuring compliance with the latest building codes and electrical regulations.
+                </li>
+                <li>Skilled in the repair of electrical equipment, including vacuums, heaters, washing machines, and electric panels, showcasing a strong foundation in electrical engineering principles and problem-solving.
+                </li>
+              </div>
+            <div class="item item-1">
+              <div class="title-date">
+                  
+                <p class="experience-title"><span class="red-text">Manufacturing Engineering Intern </span>| Bay Area Circuits</p>
+                <p class="experience-date"> June 2021 - August 2021</p>
+                </div>
+                <li>Operated Flying Probe Testing Equipment, utilizing robotic probes to establish electrical connections for PCB testing.</li>
+                <li>Conducted thorough Manual Visual Inspections to identify and rectify defects, ensuring PCBs met quality identifying issues such as solder bridges, damaged components, and incorrect placements.</li>
+                <li>Executed Manal Point-to-Point Testing with precision, utilizing multimeters to verify continuity between specific PCB points, guaranteeing the integrity of electrical connections.</li>
+              </div>
+  
+            </div>
+        
+        </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+    </div>
+
+
+    <script>
+        const phrases = [
+          'Software Engineer at Magna International',
+          'Computer Engineering Student at UC Santa Barbara'
+        ];
+        const typingDelay = 50;
+        const erasingDelay = 50;
+        const newPhraseDelay = 1500; 
+        let phraseIndex = 0;
+        let letterIndex = 0;
+        let currentPhrase = [];
+        let isErasing = false;
+      
+        function typePhrase() {
+          const animatedText = document.getElementById('animatedText');
+          if (isErasing) {
+            if (letterIndex > 0) {
+              currentPhrase.pop();
+              letterIndex--;
+              animatedText.textContent = currentPhrase.join('');
+              setTimeout(typePhrase, erasingDelay);
+            } else {
+              isErasing = false;
+              phraseIndex = (phraseIndex + 1) % phrases.length;
+              setTimeout(typePhrase, typingDelay);
+            }
+          } else {
+            if (letterIndex < phrases[phraseIndex].length) {
+              currentPhrase.push(phrases[phraseIndex][letterIndex]);
+              letterIndex++;
+              animatedText.textContent = currentPhrase.join('');
+              setTimeout(typePhrase, typingDelay);
+            } else {
+              isErasing = true;
+              setTimeout(typePhrase, newPhraseDelay);
+            }
+          }
+        }
+      
+        window.onload = () => {
+          setTimeout(typePhrase, newPhraseDelay);
+        };
+      </script>
+      
+    
+</body>
+</html>

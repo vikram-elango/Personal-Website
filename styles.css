@@ -1,0 +1,329 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #000; 
+    color: #fff; 
+    margin: 0;
+    padding: 20px;
+    text-align: center; 
+}
+
+.navbar {
+    background: #540000; 
+    color: #fff; /* White text */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.logo-link {
+    display: inline-block; /* Allows for size adjustments */
+}
+
+.logo-img {
+    height: 30px; /* Adjust logo size as needed */
+}
+
+.nav-links {
+    align-items: center;
+    gap: 20px; /* Space between navigation items */
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.nav-item {
+    font-size: 20px; /* Larger font size */
+    font-weight: bold; /* Bold font */
+    color: white; /* Dark grey text */
+    text-decoration: none; /* Removes underline from links */
+    padding: 5px 10px;
+}
+
+
+.nav-item:hover {
+
+    border-radius: 5px; /* Rounded corners on hover */
+    color: #ff0043;
+    
+}
+
+.logo-link{
+    font-size: 20px; /* Larger font size */
+    font-weight: bold; /* Bold font */
+    color: white; /* Dark grey text */
+    text-decoration: none; /* Removes underline from links */
+    padding: 5px 10px;
+
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+  
+    .navbar {
+        padding: 5px 10px; /* Adjust padding for smaller screens */
+    }
+  
+    /* Add more styles for smaller screens as needed */
+  }
+  
+  
+  .button-hover{
+    color: hsla(252.15686274509804, 100.00%, 70.00%, 1.00);
+    transition: all 0.3s ease;
+  
+  }
+  
+  .button-hover:hover{
+    color:white;
+    transition: all 0.3s ease;
+  
+  }
+  
+  
+  
+  
+  .navbar a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  
+    transition: background-color 0.5s, backdrop-filter 0.5s; /* Add transition effect */
+  }
+  
+  .homepage {
+    background: #540000;
+    margin-top: -18px;
+  }
+  
+  .download {
+    background-color: hsla(252.15686274509804, 100.00%, 70.00%, 1.00);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    transition: background-color 0.3s, color 0.3s; /* Add transition properties */
+    color: white;
+  
+  }
+  
+  .download:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .picture {
+    height: 430px;
+    display: block;
+    border-radius: 40px;
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .image {
+    min-width: 0;
+    height: 80vh;
+    padding-top: 100px;
+  }
+  
+  .name {
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: left;
+    color: white;
+    margin-left: 100px;
+    margin-bottom: 5px;
+  }
+  .position{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: left;
+    width: 1000px;
+    color:#ff0043;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    margin-left: 100px;
+    margin-top: 0;
+  
+  }
+  
+  .Intro {
+    padding-right: 100px;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 18px;
+    margin-left: 100px;
+    width: 800px;
+  
+  
+  }
+  .body-center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+  .picture{
+    flex-shrink: 0;
+    margin-left: 200px;
+    width: 400px;
+    margin-right: 100px;
+  }
+  .introduction {
+    flex: 1;
+    min-width: 0;
+    height: 80vh;
+    color: white;
+    padding-top: 100px;
+    line-height: 100px;
+  
+  }
+  
+  
+  
+  
+  
+  .github{
+    width: 40px;
+    padding-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    
+  }
+  .email{
+    width: 40px;
+  }
+  
+  .linkedin{
+    width: 40px;
+    padding-top: 20px;
+  
+  }
+  
+  .icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding-left: 100px;
+  
+  }
+
+
+  #animatedText {
+    height: 50px; /* Set this to the height that fits your largest text */
+    display: flex;
+    align-items: left; /* This will vertically center the text */
+    justify-content: left; /* This will horizontally center the text */
+}
+/* end of first page */
+/* second page  */
+li {
+  text-indent: -1.3em; /* This will pull the text back to align with the content above */
+  padding-left: 1em; /* This adds space back before the bullet point, adjust as necessary */
+  margin: 5px;
+}
+.body-center-2{
+  background-color: #6A0000;
+}
+
+.second-title{
+  margin: 50px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.container{
+  width: 80%;
+  height: 1000px;
+  margin: 0 auto;
+  border-color: white;
+  display: flex;
+  margin-top: 100px;
+}
+.item {
+  width: auto;
+
+  height: auto;
+
+  padding: 1em;
+  font-weight: 100;
+  color: var(--clr-light);
+  text-align: left;
+  border-color: #ff0043;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-2{
+
+  height: auto;
+
+  padding: 1em;
+  font-weight: 100;
+  color: var(--clr-light);
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.right-container{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left-container{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 30px;
+}
+
+.title-date{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.experience-title{
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.experience-date{
+  font-style: italic;
+}
+
+.red-text{
+  color: #ff0043;
+}
+
+
+.exp-logo{
+  width: 250px;
+  height: auto;
+}
+
+#ucsblogo {
+  position: relative; /* or 'absolute' if it's positioned within a positioned parent */
+  top: 40px; /* Adjust the value to move it lower */
+}
