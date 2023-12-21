@@ -117,8 +117,9 @@ body {
   
   .picture {
     height: 430px;
-    display: block;
-    border-radius: 40px;
+    height: 430px; /* Make sure the height is equal to the width for a circle */
+    border-radius: 50%; /* This makes the image circular */
+    object-fit: cover;
   }
   .body {
     display: flex;
