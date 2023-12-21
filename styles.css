@@ -9,64 +9,63 @@ body {
 
 .navbar {
     background: #540000; 
-    color: #fff; /* White text */
+    color: #fff; 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px; /* Adjust padding as needed */
+    padding: 10px 20px; 
 }
 
 .logo-link {
-    display: inline-block; /* Allows for size adjustments */
+    display: inline-block; 
 }
 
 .logo-img {
-    height: 30px; /* Adjust logo size as needed */
+    height: 30px;
 }
 
 .nav-links {
     align-items: center;
-    gap: 20px; /* Space between navigation items */
+    gap: 20px; 
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
 }
 
 .nav-item {
-    font-size: 20px; /* Larger font size */
-    font-weight: bold; /* Bold font */
-    color: white; /* Dark grey text */
-    text-decoration: none; /* Removes underline from links */
+    font-size: 20px; 
+    font-weight: bold; 
+    color: white; 
+    text-decoration: none;
     padding: 5px 10px;
 }
 
 
 .nav-item:hover {
 
-    border-radius: 5px; /* Rounded corners on hover */
+    border-radius: 5px; 
     color: #ff0043;
     
 }
 
 .logo-link{
-    font-size: 20px; /* Larger font size */
-    font-weight: bold; /* Bold font */
-    color: white; /* Dark grey text */
-    text-decoration: none; /* Removes underline from links */
+    font-size: 20px;
+    font-weight: bold; 
+    color: white; 
+    text-decoration: none; 
     padding: 5px 10px;
 
 }
 
 @media (max-width: 768px) {
     body {
-        font-size: 14px; /* Decrease font size for smaller screens */
+        font-size: 14px; 
     }
   
     .navbar {
-        padding: 5px 10px; /* Adjust padding for smaller screens */
+        padding: 5px 10px; 
     }
   
-    /* Add more styles for smaller screens as needed */
   }
   
   
@@ -92,7 +91,7 @@ body {
     text-decoration: none;
     font-size: 20px;
   
-    transition: background-color 0.5s, backdrop-filter 0.5s; /* Add transition effect */
+    transition: background-color 0.5s, backdrop-filter 0.5s; 
   }
   
   .homepage {
@@ -106,7 +105,7 @@ body {
     border: none;
     border-radius: 10px;
     padding: 8px;
-    transition: background-color 0.3s, color 0.3s; /* Add transition properties */
+    transition: background-color 0.3s, color 0.3s; 
     color: white;
   
   }
@@ -219,16 +218,16 @@ body {
 
 
   #animatedText {
-    height: 50px; /* Set this to the height that fits your largest text */
+    height: 50px; 
     display: flex;
-    align-items: left; /* This will vertically center the text */
-    justify-content: left; /* This will horizontally center the text */
+    align-items: left; 
+    justify-content: left;
 }
 /* end of first page */
 /* second page  */
 li {
-  text-indent: -1.3em; /* This will pull the text back to align with the content above */
-  padding-left: 1em; /* This adds space back before the bullet point, adjust as necessary */
+  text-indent: -1.3em;
+  padding-left: 1em;
   margin: 5px;
 }
 .body-center-2{
@@ -324,6 +323,61 @@ li {
 }
 
 #ucsblogo {
-  position: relative; /* or 'absolute' if it's positioned within a positioned parent */
-  top: 40px; /* Adjust the value to move it lower */
+  position: relative; 
+  top: 40px; 
+}
+
+@media (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+  .navbar {
+      padding: 5px 10px;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .nav-links {
+      flex-direction: column;
+      padding: 0;
+  }
+
+  .nav-item {
+      font-size: 16px;
+      padding: 8px;
+  }
+
+  .name, .position, .Intro {
+      font-size: 16px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .body-center {
+      flex-direction: column;
+  }
+
+  .picture {
+      width: 90%;
+      margin: 0 auto;
+  }
+
+  .container {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .left-container, .right-container {
+      width: 100%;
+  }
+
+  .exp-logo {
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  .item, .item-1, .item-2 {
+      text-align: center;
+  }
 }
