@@ -14,16 +14,19 @@
     
 </head>
 <body>
+  <script src="script.js"></script>
+
 
     <nav class="navbar">
         <a href="/" class="logo-link">Vikram</a>
         <div class="nav-links">
-            <a href="/Personal-Website" class="nav-item">Home</a>
-            <a href="/Personal-Website" class="nav-item">Experience</a> 
-            <a href="/Personal-Website" class="nav-item">Projects</a>
-            <a href="/Personal-Website" class="nav-item">Skills</a>
-            <a href="/resume/VIKRAM_ELANGO_RESUME.pdf" class="nav-item" target="_blank">Resume</a>
+          <a href="#home" class="nav-item">Home</a>
+          <a href="#experience" class="nav-item">Experience</a> 
+          <a href="#projects" class="nav-item">Projects</a>
+          <a href="#skills" class="nav-item">Skills</a>
+          <a href="#resume" class="nav-item" target="_blank">Resume</a>
         </div>
+        
         
     </nav>
 
@@ -81,7 +84,7 @@
         </div>
     </div>
 
-    <div id='second' class="journey">
+<div id="experience" class="journey">
       <div class="body">
         <div class="body-center-2">
           <div class="second-title">My <span class="red-text">Experience</span></div>
@@ -146,7 +149,7 @@
       </div>
     </div>
 
-    <div class="projects">
+    <div id="projects" class="projects">
       <div class="body">
         <div class="body-center-3">
       <div class="second-title">My <span class="red-text">Projects</span></div>
@@ -161,12 +164,15 @@
             <div class="project-info">
             <div class="title-date">
             
-            <p class="experience-title projects"> <span class="red-text"> Intelligent Bot Finder </span>| Forta Network</p>
+            <p class="experience-title projects"> <span class="forta-text"> Intelligent Bot Finder </span> | Forta Network</p>
             <p class="experience-date projects"><span></span> September 2023 - Present</p>
             </div>
             <p class="project-description">
               As the leader of a five-person full-stack development team, I spearheaded the integration of the GPT API into Forta Network's search infrastructure. This pivotal enhancement transformed the platform into an intelligent application, equipped to provide context-sensitive bot recommendations. My role involved the implementation of a recommendation system driven by the GPT API, utilizing natural language processing to discern and fulfill user queries with precision. Furthermore, I contributed to the development of both the frontend interface and the backend architecture, significantly augmenting the search functionality and user experience.
             </p>
+              <a href="https://github.com/FortaInfinity/FortaInfinity-BotWeiser" class="view-project-link" target="_blank">View Project</a>
+
+            
         
           </div>
         </div>
@@ -178,12 +184,14 @@
             <div class="project-info">
             <div class="title-date">
             
-            <p class="experience-title projects" id="qa-title"> <span class="red-text">Quality Assurance Software </span>| Magna International</p>
+            <p class="experience-title projects" id="qa-title"> <span class="qa-text">Quality Assurance Software </span>| Magna </p>
             <p class="experience-date projects"><span></span> June 2023 - Present</p>
             </div>
             <p class="project-description">
               In a strategic initiative to enhance operational efficiency, I developed a Python-based Quality Assurance Software which significantly expedited the process of log file analysis, error detection, and data extraction. This innovative solution led to a staggering 95% reduction in processing time, effectively diminishing the duration from several days to mere seconds. The software extends beyond the scope of conventional quality assurance measures by adeptly identifying sensors that display recurring failures, despite having passed initial quality assessments. This key feature disrupts the expensive cycle of product returns to production, exemplifying a proactive approach to quality management.
             </p>
+            <a href="https://www.magna.com/products/power-vision/adas-and-automated-driving/thermal-sensing" class="view-project-link" target="_blank">View Project</a>
+
         
           </div>
         </div>
@@ -195,15 +203,18 @@
             <div class="project-info">
             <div class="title-date">
             
-            <p class="experience-title projects" id="project-title-gauchoride"> <span class="red-text"> Gaucho Ride </span>| UC Santa Barbara</p>
+            <p class="experience-title projects" id="project-title-gauchoride"> <span class="blue-text"> Gaucho Ride </span> | UC Santa Barbara</p>
             <p class="experience-date projects" id="project-date-gauchoride"><span></span> April 2023 - June 2023</p>
             </div>
             <p class="project-description">
               At UCSB, I took part in an ambitious initiative called 'Gaucho Ride,' a Full-Stack application built with React, aiming to facilitate campus travel for students with disabilities. Our team of six developers focused on delivering a cutting-edge solution for easy ride-hailing from any campus point. I contributed to the design and development of an intuitive interface that significantly elevated the user experience, ensuring that convenient transportation is just a few clicks away for every student.
             </p>
+            <a href="https://github.com/ucsb-cs156-s23/proj-gauchoride-s23-5pm-1" class="view-project-link" target="_blank">View Project</a>
+
         
           </div>
         </div>
+        
 
         </div>
 
@@ -212,6 +223,34 @@
     </div>
     </div>
 
+    <div id="skills" class="skills">
+      <div class="body">
+        <div class="body-center-3">
+          <div class="second-title">My <span class="red-text">Skills</span></div>
+          <div class="carousel-container">
+
+          <div class="skill-carousel">
+            <div class="carousel-track">
+              <!-- Duplicate each skill image so that the carousel can loop infinitely -->
+              <img src="skills_logo/Python.svg" alt="Python" class="skill">
+              <img src="skills_logo/JS.svg" alt="JavaScript" class="skill">
+              <img src="skills_logo/html.png" alt="HTML" class="skill">
+              <img src="skills_logo/css.png" alt="CSS" class="skill">
+              <img src="skills_logo/github.svg" alt="GitHub" class="skill">
+              <img src="skills_logo/Python.svg" alt="Python" class="skill">
+              <img src="skills_logo/JS.svg" alt="JavaScript" class="skill">
+              <img src="skills_logo/html.png" alt="HTML" class="skill">
+              <img src="skills_logo/css.png" alt="CSS" class="skill">
+              <img src="skills_logo/github.svg" alt="GitHub" class="skill">
+
+              <!-- ... -->
+              <!-- Ensure you duplicate the images so there's a seamless transition -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
 
     </div>
 
@@ -262,4 +301,10 @@
       
     
 </body>
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2023 Vikram Elango. All rights reserved.</p>
+  </div>
+</footer>
+
 </html>

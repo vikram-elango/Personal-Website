@@ -8,13 +8,17 @@ body {
 }
 
 .navbar {
-    background: #540000; 
-    color: #fff; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px; 
+  background: #540000; 
+  color: #fff; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: sticky; /* Added this line */
+  top: 0; /* Added this line */
+  z-index: 1000; /* Added this line to ensure navbar is above all other content */
 }
+
 
 .logo-link {
     display: inline-block; 
@@ -301,6 +305,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .experience-title{
@@ -440,6 +445,7 @@ li {
 .experience-title.projects{
   margin-top: -15px;
   padding-left: 20px;
+  
 }
 
 .experience-date.projects{
@@ -467,3 +473,91 @@ li {
    background-color: #540000;
 
  }
+
+
+
+ .forta-img{
+   height: 19px;
+
+ }
+
+ .forta-text{
+   color: #bd34eb;
+ }
+
+ .qa-text{
+   color: gray;
+ }
+
+ .magna-img{
+   height: 25px;
+ }
+
+ .blue-text{
+   color: #34d2eb;
+   
+ }
+
+ .ucsb-img{
+   height: 26px;
+ }
+
+.view-project-link {
+  text-decoration: underline;
+  cursor: pointer; 
+  color: inherit; 
+  margin-top: 0.5em; 
+  display: block;
+  text-align: center; 
+  margin-right: 100px;
+}
+
+.red-text {
+  color: red;
+}
+
+.carousel-container {
+  width: 60%; 
+  margin: auto; 
+  position: relative; 
+}
+.skill-carousel {
+  overflow: hidden;
+  width: 100%; /* This will now be 100% of the .carousel-container width */
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  align-items: center; /* Center the images vertically */
+  height: 320px; /* Set the height to be slightly larger than the images to accommodate them */
+}
+
+.carousel-track {
+  display: flex;
+  position: left; /* If you want your track to be absolutely positioned within .carousel-container */
+  left: 0; /* Aligns the track to the left edge of .carousel-container */
+  animation: scroll-skills 5s linear infinite;
+}
+
+.skill {
+  flex: 0 0 auto; /* Allow each skill to size itself based on the image size */
+  max-width: 20%; /* Adjust this to change how much of the carousel each image takes up */
+  margin: 5px; /* Adds space around each image */
+}
+
+img.skill {
+  width: auto; /* Maintain the aspect ratio */
+  height: 300px; /* Set a fixed height to make all images the same size */
+  object-fit: contain; /* Ensure the images are fully visible without being cropped */
+}
+@keyframes scroll-skills {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Adjusted to account for the doubled content */
+  }
+}
+
+/* CSS for smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
