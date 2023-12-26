@@ -1,19 +1,13 @@
-// Select the carousel track
 const carouselTrack = document.querySelector('.carousel-track');
 
-// Clone the skill images
 const clone = carouselTrack.cloneNode(true);
 
-// Append the cloned images to the track to double the content
 carouselTrack.appendChild(clone);
 
-// Determine the number of skill images after cloning
 const totalSkills = document.querySelectorAll('.carousel-track .skill').length;
 
-// Update the width of the carousel track based on the number of skills (original + cloned)
 carouselTrack.style.width = `calc(100% * (${totalSkills} / 5))`;
 
-// Now you need to update the keyframe animation to account for the duplicated images
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".nav-item");
   
@@ -24,13 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
     function smoothScroll(e) {
       e.preventDefault();
   
-      const targetId = this.getAttribute("href").substring(1); // Remove the '#' from the href attribute
+      const targetId = this.getAttribute("href").substring(1); 
       const targetElement = document.getElementById(targetId);
   
       if (targetElement) {
         window.scrollTo({
           top: targetElement.offsetTop,
-          behavior: "smooth", // Smooth scrolling behavior
+          behavior: "smooth", 
         });
       }
     }
@@ -38,3 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+  const track = document.querySelector('.carousel-track');
+  const interval = 4000; 
+  
+  function shiftItem() {
+    const firstItem = track.querySelector('.skill');
+    track.appendChild(firstItem);
+  }
+  
+  setInterval(shiftItem, interval);
+  
