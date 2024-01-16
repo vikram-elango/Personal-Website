@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <title>Vikram Elango</title>
+        <link rel="shortcut icon" href="images/vikramfavicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Merriweather&family=Montserrat:wght@400;500&family=Noto+Sans:ital@0;1&family=Poppins:ital,wght@1,500&family=Roboto&family=Sacramento&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href='../css/style.css'>
+    
+    
+</head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <a href="#" class="logo">Vikram</a>
+        </div>
+        <div class="navbar-links">
+          <a class="home-nav" href="/pages/index.html">Home</a>
+          <a class="experience-nav" href="/pages/experience.html">Experience</a>
+          <a class="projects-nav" href="/pages/projects.html">Projects</a>
+          <a class="skills-nav" href="#">Skills</a>
+          <a id="navbar-resume" class="home-nav" href="/resume/VIKRAM_ELANGO_RESUME.pdf" target="_blank">Resume</a>
+        </div>
+      </nav>
+    </header>
+    <div class="intro-container">
+      <div class="intro-left-container">
+        <div class="intro" id="sideslide">Hi, It's Me</div>
+        <div class="intro-name" id="sideslide">Vikram Elango</div>
+        <div id="animatedText" id="sideslide"></div>
+        <div class="connect" id="sideslide">Connect with me, through the links below!</div>
+        <div class="icons" id="sideslide">
+          <div >
+              <a href="https://www.linkedin.com/in/vikram-elango/" target="_blank"><img class="socials" src="/logos/linkedin.png" ></a>
+          </div>
+          <div > 
+              <a href="https://github.com/vikram-elango" target="_blank"><img class="socials" src="/logos/github.png"></a>
+
+          </div>
+          <div >
+              <a href="https://app.forta.network/alerts" target="_blank"><img class="socials" src="/logos/gmail.png"></a>
+          </div>
+
+      </div>
+
+
+      </div>
+      <div class="intro-right-container">
+        <img class="profile-picture" src="/images/vik.jpeg">
+      </div>
+
+    </div>
+    <script>
+      const phrases = [
+        'Software Engineer at Magna International',
+        'Computer Engineering Student at UC Santa Barbara'
+      ];
+      const typingDelay = 50;
+      const erasingDelay = 50;
+      const newPhraseDelay = 1500; 
+      let phraseIndex = 0;
+      let letterIndex = 0;
+      let currentPhrase = [];
+      let isErasing = false;
+    
+      function typePhrase() {
+        const animatedText = document.getElementById('animatedText');
+        if (isErasing) {
+          if (letterIndex > 0) {
+            currentPhrase.pop();
+            letterIndex--;
+            animatedText.textContent = currentPhrase.join('');
+            setTimeout(typePhrase, erasingDelay);
+          } else {
+            isErasing = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            setTimeout(typePhrase, typingDelay);
+          }
+        } else {
+          if (letterIndex < phrases[phraseIndex].length) {
+            currentPhrase.push(phrases[phraseIndex][letterIndex]);
+            letterIndex++;
+            animatedText.textContent = currentPhrase.join('');
+            setTimeout(typePhrase, typingDelay);
+          } else {
+            isErasing = true;
+            setTimeout(typePhrase, newPhraseDelay);
+          }
+        }
+      }
+    
+      window.onload = () => {
+        setTimeout(typePhrase, newPhraseDelay);
+      };
+    </script>
+  </body>
+
+<footer>
+  <!-- <div class="footer-content">
+    <p>&copy; 2023 Vikram Elango. All rights reserved.</p>
+  </div> -->
+</footer>
+
+</html>
