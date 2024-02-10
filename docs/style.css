@@ -16,7 +16,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  /* padding: 20px 10%; */
   background: #F5F5F5;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +32,30 @@ body {
 
 .v-logo{
   height: 100px;
+  animation: slideDown 0.5s linear forwards;
 }
+
+/* @keyframes slideDown {
+  0%{ transform: translateY(100px); opacity:0;}
+  100%{ transform: translateY(0); opacity: 1;}
+  
+} */
+
+.home-nav{
+  animation: slideDown 0.7s linear forwards;
+}
+
+.experience-nav{
+  animation: slideDown 1s linear forwards;
+}
+
+.projects-nav{
+  animation: slideDown 1.3s linear forwards;
+}
+
+/* .skills-nav{
+  animation: slideDown 1.5 linear forwards; 
+} */
 
 .navbar a {
   font-size: 24px;
@@ -58,8 +80,8 @@ body {
 
 .navbar-links {
   display: flex;
-  justify-content: flex-end; /* This will push your links to the right */
-  width: 100%; /* Ensure the navbar links take up the remaining space */
+  justify-content: flex-end; 
+  width: 100%; 
 }
 
 
@@ -81,23 +103,23 @@ body {
 
 .intro-container{
   display: flex;
-  flex-direction: row; /* changed from column to row */
+  flex-direction: row;
   justify-content: center;
-  align-items: center; /* This will vertically center the content in the viewport */
-  height: 100vh; /* This will make the container take up the full viewport height */
+  align-items: center; 
+  height: 100vh; 
 }
 
 .intro-left-container{
   width: 60%;
-  text-align: left; /* This will align the text to the left */
-  padding-left: 10%; /* Adjust as needed to move text a bit more from the left edge */
+  text-align: left; 
+  padding-left: 10%; 
   opacity: 0;
 }
 
 .intro-right-container{
   width: 40%;
   display: flex;
-  justify-content: center; /* This will horizontally center the image in its half of the container */
+  justify-content: center; 
   padding-right: 100px;
 }
 
@@ -114,31 +136,31 @@ body {
   display: block;
   font-size: 50px;
   color: #0A0A0A;
-  margin-bottom: 20px; /* Adjust as necessary for spacing */
+  margin-bottom: 20px;
 }
 #animatedText{
   font-size: 30px;
   color: #434343;
-  margin-bottom: 70px; /* Adjust as necessary for spacing */
+  margin-bottom: 70px; 
   height: 1px;
 }
 .intro-name{
   display: block;
   font-size: 60px;
   color: #0A0A0A;
-  margin-bottom: 20px; /* Adjust as necessary for spacing */
+  margin-bottom: 20px; 
 }
 
 .connect{
-  color: #434343; /* Light grey color for visibility */
-  margin-bottom: 20px; /* Adjust as necessary for spacing */
+  color: #434343; 
+  margin-bottom: 100px; 
 }
 
 .icons{
   display: flex;
   flex-direction: row;
-  justify-content: left; /* This will center the icons */
-  gap: 50px; /* This adds space between the icons */
+  justify-content: left; 
+  gap: 50px;  
 }
 
 .socials{
@@ -160,21 +182,20 @@ body {
 
   }
   .profile-picture {
-    width: 300px; /* Smaller size for smaller screens */
-    height: 300px; /* Maintain aspect ratio */
-    margin: 0 auto; /* Center the image */
+    width: 300px; 
+    height: 300px; 
+    margin: 0 auto; 
   }
   .icons {
-    justify-content: space-around; /* Space out icons evenly */
-    margin-top: 20px; /* Add some space above the icons */
+    justify-content: space-around; 
+    margin-top: 20px; 
   }
 }
 
 
 
 
-/* end of first page */
-/* second page  */
+
 li {
   text-indent: -1.3em;
   padding-left: 1em;
@@ -291,16 +312,7 @@ li {
   position: relative; 
   top: 40px; 
 }
-/* 
-@media (max-width: 768px) {
-  body {
-      font-size: 14px;
-  }
-  .navbar {
-      padding: 5px 10px;
-  }
-  
-} */
+
 
 @media only screen and (max-width: 600px) {
   .navbar .nav-links {
@@ -361,8 +373,6 @@ li {
 
 .navbar-links a, .logo{
   display: inline-block;
-  animation: slideDown 1s ease forwards;
-  opacity: 0; /* Initially hide the links */
   
 }
 
@@ -392,10 +402,6 @@ li {
   from {transform: translateX(100px); opacity: 0;}
   to {transform: translateX(0);opacity: 1;}
 }
-
-/* end of second page */
-
-/* start of third page  */
 
 
 .project-container {
@@ -486,9 +492,9 @@ li {
   text-align: center; 
   margin-right: 100px;
   border-radius: 10px;
-  border: 2px solid #FFFFFF; /* This sets a white border 2 pixels thick */
-  padding: 8px 16px; /* This adds some padding inside the button, making the border look better */
-  background-color: transparent; /* This makes the background transparent */
+  border: 2px solid #FFFFFF; 
+  padding: 8px 16px;
+  background-color: transparent; 
   transition: background-color 0.3s, color 0.3s;
   text-decoration: none;
   margin-left: 210px;
@@ -498,15 +504,15 @@ li {
 }
 
 .view-project-link:hover {
-  background-color: #FFFFFF; /* Change background to white on hover */
-  color: #000000; /* Change text color to black on hover */
+  background-color: #FFFFFF;  
+  color: #000000; 
 }
 .red-text {
   color: #FF6A00;
 }
 
 
-/* carousal start */
+
 
 .carousel-container {
   width: 60%; 
@@ -723,7 +729,7 @@ html {
 
   position: relative;
   max-width: 800px;
-  margin: 0 auto; /* Center the timeline */
+  margin: 0 auto; 
   opacity: 1;
   
 }
@@ -739,7 +745,7 @@ html {
   left: 50%;
   margin-left: 370px;
 
-  transform: translateX(-50%); /* Center the line */
+  transform: translateX(-50%); 
   animation: moveline 3s linear forwards;
   opacity: 1;
   z-index: 0;
@@ -749,11 +755,11 @@ html {
 
 @keyframes movedown {
   0% {
-    opacity: 0; /* Start with half opacity */
+    opacity: 0; 
     transform: translateY(-30px);
   }
   100% {
-    opacity: 1; /* Fade in to full opacity */
+    opacity: 1;
     transform: translateY(0px);
   }
 }
@@ -793,16 +799,7 @@ html {
 
 }
 
-/* .third-title {
-  margin-top: 7%;
-  padding-left: 5%;
-  font-size: 50px;
-  font-weight: bold;
-  margin-bottom: 50px;
-  animation: sideslide 0.5s linear forwards;
-  opacity: 0;
-  animation-delay: 1s;
-} */
+
 
 .projects-sort{
   font-family: Roboto;
