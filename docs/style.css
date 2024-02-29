@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  z-index: 1;
 }
 
 body {
@@ -53,9 +54,14 @@ body {
   animation: slideDown 1.3s linear forwards;
 }
 
-/* .skills-nav{
+.skills-nav{
   animation: slideDown 1.5 linear forwards; 
-} */
+}
+
+.resume-nav{
+  animation: slideDown 1.7s linear forwards;
+}
+
 
 .navbar a {
   font-size: 24px;
@@ -142,7 +148,7 @@ body {
   font-size: 30px;
   color: #434343;
   margin-bottom: 70px; 
-  height: 1px;
+  height: 50px;
 }
 .intro-name{
   display: block;
