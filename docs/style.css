@@ -917,6 +917,10 @@ html {
   object-fit: cover;
 
 }
+.project-company-im{
+  position: absolute;
+  margin-top: 180px;
+}
 
 .project-company-name{
   color: #434343;
